@@ -17,7 +17,7 @@ docker run --rm -it --entrypoint /bin/zsh jcarp/pyenv-zsh
 docker run -v ~/Repos:/root/Repos --rm -it --entrypoint /bin/zsh jcarp/pyenv-zsh
 
 # Windows
-docker run -v "/c/Repos/":/root/Repos --rm -it --entrypoint /bin/zsh/ jcarp/pyenv-zsh
+docker run -v "/c/Repos/":/root/Repos --rm -it --entrypoint /bin/zsh jcarp/pyenv-zsh
 
 ```
 
