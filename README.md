@@ -53,8 +53,13 @@ python --version # Python 3.7.5
 ```
 
 ## Development
+If you want to change the dockerfile in order to add additional features you can rebuild it like so
 ```
 # Build image
-docker build . -t jcarp/pyenv-zsh
+docker build . -t my_tag
+
+# Then once you have created your new image you can use it like so by replacing with your tag
+# For example
+docker run -v ~/Repos:/root/Repos --rm -it --entrypoint /bin/zsh my_tag
 
 ```
